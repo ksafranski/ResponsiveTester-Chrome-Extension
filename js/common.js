@@ -1,5 +1,5 @@
 /*
-* Mobile Viewer Script by BeWebFocused.com
+* Mobile Viewer Script by Kent Safranski <http://www.fluidbyte.net>
 */
 
 // GLOBALS
