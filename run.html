@@ -1,0 +1,27 @@
+<script>
+
+
+
+
+
+chrome.browserAction.onClicked.addListener(function(tab) {
+  
+  /*chrome.tabs.getSelected(null,function(tab) {
+    tablink = tab.url;
+  });
+
+  chrome.tabs.create({'url': chrome.extension.getURL('index.html?url='+tablink)}, function(tab) {
+    //alert(tablink);
+  });*/
+
+
+	chrome.tabs.getSelected(null, function(tab) {
+    	openTab(tab.url);
+	});
+
+	function openTab(tablink) {
+	  chrome.tabs.create({'url': chrome.extension.getURL('index.html?url='+tablink)});
+	}
+
+});
+</script>

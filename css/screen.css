@@ -1,0 +1,70 @@
+@import url("reset.css");
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* DOCUMENT */
+
+    html { width: 100%; height: 100%; overflow: scroll; background: url(../images/bg.png); font: normal 13px Ubuntu, Arial, Helvetica, sans-serif; }
+
+/* HEADER */
+
+    header { position: fixed; top: 0; left: 0; height: 55px; width: 100%; background-color: rgba(255, 255, 255, 0.3); text-align: center; z-index: 999999; border-bottom: 2px solid #3d3d3d;
+        -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, .5);
+        -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, .5);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, .5);
+    }
+    
+    input, select { font: normal 13px Ubuntu, Arial, Helvetica, sans-serif; border: 1px solid #666; margin: 10px 10px; padding: 8px; color: #424242;
+        -moz-box-sizing:content-box; box-sizing:content-box; box-sizing:content-box;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        outline: none;
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255,255,255,.7) 0%, rgba(214,214,214,.7) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.7)), color-stop(100%,rgba(214,214,214,.7))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(255,255,255,.7) 0%,rgba(214,214,214,.7) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(255,255,255,.7) 0%,rgba(214,214,214,.7) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(255,255,255,.7) 0%,rgba(214,214,214,.7) 100%); /* IE10+ */
+        background: linear-gradient(top, rgba(255,255,255,.7) 0%,rgba(214,214,214,.7) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+    }
+    
+    input:hover, select:hover { border: 1px solid #4a4a4a; }
+    
+    input[type="button"] { cursor: pointer; }
+    
+    #url { width: 250px; }
+
+/* MAIN */
+    
+    #device { position: absolute; width: 320px; height: 480px; top: 50%; left: 50%; margin: -240px 0 0 -160px; padding: 20px; border: 2px solid #3d3d3d; 
+        background: rgb(96,96,96); /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(96,96,96,1) 0%, rgba(12,12,12,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(96,96,96,1)), color-stop(100%,rgba(12,12,12,1))); /* Chrome,Safari4+ */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(96,96,96,1) 0%,rgba(12,12,12,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(center, ellipse cover, rgba(96,96,96,1) 0%,rgba(12,12,12,1) 100%); /* Opera 12+ */
+        background: -ms-radial-gradient(center, ellipse cover, rgba(96,96,96,1) 0%,rgba(12,12,12,1) 100%); /* IE10+ */
+        background: radial-gradient(center, ellipse cover, rgba(96,96,96,1) 0%,rgba(12,12,12,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#0c0c0c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, .5);
+        -moz-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, .5);
+        box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, .5);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+    }
+    
+    #viewport { display: block; position: absolute; width: 320px; height: 480px; top: 50%; left: 50%; margin: -218px 0 0 -138px; background-color: #fff; 
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+/* SCROLLBARS (WebKit Only) */
+
+    ::-webkit-scrollbar{ width: 10px; height: 10px;}
+    ::-webkit-scrollbar-track-piece{ background-color: #333; -webkit-border-radius: 0; }
+    ::-webkit-scrollbar-thumb:vertical{ height: 5px; background-color: #666; -webkit-border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:vertical:hover{ background-color: #999; }
+    ::-webkit-scrollbar-thumb:horizontal{ width: 5px; background-color: #666; -webkit-border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:horizontal:hover{ background-color: #999; }
