@@ -1,34 +1,55 @@
 <!doctype html>
-<!--[if lte IE 8 ]><html lang="en" class="ie"><![endif]-->
+
 <head>
     <meta charset="utf-8">
     <title>ResponsiveTester</title>
-    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="css/screen.css">
 </head>
 
 <body>
+    
+    <div id="console">
+    
+        <div id="handle">
+        
+            <a id="reveal">C<br>S<br>S<br>&middot;<br>C<br>O<br>N<br>S<br>O<br>L<br>E</a>
+            <a id="inject">R<br>U<br>N</a>
+            
+        </div>
+    
+        <div id="edit-region">
+            <div id="editor"></div>
+        </div>
+    
+    </div>
 
     <header>
-    
-        <input type="text" id="url" spellcheck="false" />
         
-        <select id="dimensions"></select>
+        <form>
         
-        <select id="zooms"></select>
+            <label>URL:</label><input id="src">
+            
+            <label>Dimensions:</label><input id="width" value="900"><label>x</label><input id="height" value="600">
         
-        <input type="button" id="rotate" rel="0" value="Rotate" />
-    
+        </form>
+        
     </header>
 
-    <div id="device"></div>
-    
-    <iframe id="viewport"></iframe>
+    <div id="container">
+        <div id="iframefix"></div>
+        <iframe name="viewport" id="viewport"></iframe>
+    </div>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'));</script>
+<script src="js/jquery-ui-1.8.23.custom.min.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.6.2.min.js"%3E%3C/script%3E'));</script>
-    <script src="js/common.js"></script>
+<script src="js/ace/ace.js"></script>
+<script src="js/ace/mode-css.js"></script>
+<script src="js/ace/theme-twilight.js"></script>
+
+<!-- Default Scripts -->
+<script src="js/system.js"></script>
 
 </body>
 </html>

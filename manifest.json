@@ -1,6 +1,6 @@
 {
   "name": "Responsive Tester",
-  "version": "1.0",
+  "version": "2.5",
   "description": "Allows for simple testing of responsive designs",
   "icons": { "16": "icon_16.png",
              "48": "icon_48.png",
